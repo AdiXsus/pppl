@@ -93,4 +93,12 @@ client.login(process.env.TOKEN).then(() => {
     handlerLogs(client);
 });
 
+client.once('ready', () => {
+  console.log(`Bot zalogowany jako ${client.user.tag}!`);
+  client.user.setPresence({
+    activities: [{ name: 'Checking PlaceRolePlay Whitelist', type: 'CUSTOM' }],
+    status: 'online',
+  });
+});
+
 module.exports = client;
