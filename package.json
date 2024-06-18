@@ -1,0 +1,42 @@
+{
+  "name": "dreamssa-main-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dreamssa#6988",
+  "license": "ISC",
+  "dependencies": {
+    "@agc93/privatebin": "^0.0.3",
+    "@androz2091/discord-invites-tracker": "^1.2.3",
+    "@distube/spotify": "^1.5.1",
+    "@distube/ytdl-core": "^4.11.10",
+    "ansi-colors": "^4.1.3",
+    "ascii-table": "^0.0.9",
+    "axios": "^1.3.6",
+    "better-sqlite3": "^8.3.0",
+    "discord-bot-youtube-notifications": "^1.1.5",
+    "discord-fivem-api": "^1.0.6",
+    "discord-giveaways": "^6.0.1",
+    "discord.js": "^14.11.0",
+    "distube": "^4.0.4",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.1",
+    "fs": "^0.0.1-security",
+    "image-size": "^1.0.2",
+    "install": "^0.13.0",
+    "isomorphic-unfetch": "^4.0.2",
+    "libsodium-wrappers": "^0.7.11",
+    "moment": "^2.29.4",
+    "ms": "^2.1.3",
+    "node-opus": "^0.3.3",
+    "npm": "^9.6.5",
+    "opusscript": "^0.0.8",
+    "quick.db": "^9.1.6",
+    "rss-converter": "^1.1.6",
+    "rss-parser": "^3.13.0",
+    "tweetnacl": "^1.0.3"
+  }
+}
