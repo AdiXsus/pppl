@@ -24,6 +24,13 @@ const client = new Client({
   partials: [User, Message, GuildMember, ThreadMember, Channel],
 });
 
+
+client.on('ready', () => {
+    console.log(`Zalogowany jako ${client.user.tag}!`);
+    
+    // Ustawienie customowego statusu
+});
+
 // invite-tracker
 
 const InvitesTracker = require("@androz2091/discord-invites-tracker");
