@@ -6,9 +6,9 @@ const { loadEvents } = require("./handlers/eventHandler");
 const { loadCommands } = require("./handlers/commandHandler");
 const { handlerLogs } = require("./handlers/handlerLogs")
 
-const keep_alive = require('.keep_alive.js')
 const fs = require('fs');
 const request = new (require('rss-parser'))();
+const keep_alive = require('./keep_alive.js')
 
 const client = new Client({
   intents: [
