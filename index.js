@@ -1,44 +1,27 @@
 const config = require("./config/config");
-const {
-    Client,
-    SlashCommandBuilder,
-    GatewayIntentBits,
-    Partials,
-    Collection,
-    EmbedBuilder,
-    hyperlink,
-} = require("discord.js");
-const {
+const { Client, SlashCommandBuilder, GatewayIntentBits, Partials, Collection, EmbedBuilder, hyperlink } = require("discord.js");
+const { Guilds, GuildMembers, GuildMessages, MessageContent, DirectMessages, GuildMessageReactions, GuildVoiceStates, GuildPresences } = GatewayIntentBits;
+const { User, Message, GuildMember, ThreadMember, Channel } = Partials;
+const { loadEvents } = require("./handlers/eventHandler");
+const { loadCommands } = require("./handlers/commandHandler");
+const { handlerLogs } = require("./handlers/handlerLogs")
+
+const keep_alive = require('./keep_alive.js')
+const fs = require('fs');
+const request = new (require('rss-parser'))();
+
+const client = new Client({
+  intents: [
     Guilds,
     GuildMembers,
     GuildMessages,
     MessageContent,
     DirectMessages,
     GuildMessageReactions,
-    GuildVoiceStates,
-    GuildPresences,
-} = GatewayIntentBits;
-const { User, Message, GuildMember, ThreadMember, Channel } = Partials;
-const { loadEvents } = require("./handlers/eventHandler");
-const { loadCommands } = require("./handlers/commandHandler");
-const { handlerLogs } = require("./handlers/handlerLogs");
-
-const keep_alive = require("./keep_alive.js");
-const fs = require("fs");
-const request = new (require("rss-parser"))();
-
-const client = new Client({
-    intents: [
-        Guilds,
-        GuildMembers,
-        GuildMessages,
-        MessageContent,
-        DirectMessages,
-        GuildMessageReactions,
-        GuildVoiceStates,
-        GuildPresences,
-    ],
-    partials: [User, Message, GuildMember, ThreadMember, Channel],
+      GuildVoiceStates,
+      GuildPresences
+  ],
+  partials: [User, Message, GuildMember, ThreadMember, Channel],
 });
 
 // invite-tracker
