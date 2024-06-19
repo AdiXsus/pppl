@@ -17,7 +17,7 @@ module.exports = {
    rolawezwania: ["1119240101059375126", "1119239800684290118", "1119239914836459550"], // ID rangi jaką ma oznaczyć nad tą wiadomością (np. Rola Administracji)
 
    // Whitelist
-   okienkorolaoznaczenie: "1251871534348238848", // Jaką rangę ma oznaczać jeśli ktoś pyta WL
+   okienkorolaoznaczenie: "1119239425671581726", // Jaką rangę ma oznaczać jeśli ktoś pyta WL
    INFO_CHANNEL_OKIENKO: "1230086906335723532", // Kanał gdzie ma się wysyłać ogłoszenie że ktoś pyta WL
    LINK_DO_REGULAMINU_SERWERA: "https://discord.com/channels/901923526028693554/1080488352773570580",
    color_okienko: "a845a1",
