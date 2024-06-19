@@ -4,7 +4,6 @@ const { Guilds, GuildMembers, GuildMessages, MessageContent, DirectMessages, Gui
 const { User, Message, GuildMember, ThreadMember, Channel } = Partials;
 const { loadEvents } = require("./handlers/eventHandler");
 const { loadCommands } = require("./handlers/commandHandler");
-const { handlerLogs } = require("./handlers/handlerLogs")
 
 const keep_alive = require('./keep_alive.js')
 const fs = require('fs');
@@ -37,7 +36,6 @@ client.commands = new Collection();
 client.login(process.env.TOKEN).then(() => {
     loadEvents(client);
     loadCommands(client);
-    handlerLogs(client);
 });
 
 module.exports = client;
