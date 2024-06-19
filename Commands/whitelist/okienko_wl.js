@@ -5,7 +5,7 @@ module.exports = {
       .setName("okienko")
       .setDescription("Otwórz okienko do WL")
       .setDMPermission(false)
-      .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
+      .setDefaultMemberPermissions(PermissionFlagsBits.Move_members)
       .addStringOption(option =>
         option.setName('description')
         .setDescription('Podaj godziny w których pytasz Whitelist')
