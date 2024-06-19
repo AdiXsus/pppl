@@ -14,7 +14,7 @@ module.exports = {
    // Wezwania Poczekalnia (Embed jeśli ktoś dołączy na kanał z podanym niżej ID)
    kanalpoczekalniawezwanie: "1080488361787129867", // ID kanału VOICE (Głosowego) - (np. Poczekalnia do Administracji)
    kanalpowiadomienwezwanie: "1252708352996151296", // ID kanału TXT (Tekstowego) - (Jeśli ktoś dołączy już na ten kanał VOICE to na te ID kanału bot wyśle EMBED)
-   rolawezwania: ["1119240101059375126", "1119239800684290118", "1119239914836459550"], // ID rangi jaką ma oznaczyć nad tą wiadomością (np. Rola Administracji)
+   rolawezwania: ["1119240101059375126", "1119239800684290118", "1119239702680178762", "1119239914836459550"], // ID rangi jaką ma oznaczyć nad tą wiadomością (np. Rola Administracji)
 
    // Whitelist
    okienkorolaoznaczenie: "1119239425671581726", // Jaką rangę ma oznaczać jeśli ktoś pyta WL
